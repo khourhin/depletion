@@ -64,7 +64,7 @@ rule all:
 
 rule index:
     input:
-        config['general']['reference']
+        reference = config['general']['reference']
     output: 
         bwa_bwt = config['general']['reference'] + ".bwt",
         fai = config['general']['reference'] + ".fai"
